@@ -1,63 +1,28 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lab 13 - jQuery Hide Show</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
-    <!-- Nhúng thư viện jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <style> 
-        body{
-            font-family: Arial;
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        #box{
-            width: 300px;
-            margin: 20px auto;
-            padding: 20px;
-            background: lightblue;
-            border-radius: 10px;
-        }
-
-        button{
-            padding: 10px 15px;
-            margin: 5px;
-            cursor: pointer;
-        }
-    </style> 
 </head>
 <body>
-
-    <h2>Ẩn và Hiện nội dung bằng jQuery</h2>
-
-    <div id="box">
-        Đây là khối nội dung cần điều khiển.
+    <button class="btn btn-primary">Bootstrap</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12 bg-primary">A</div>
+            <div class="col-md-4 col-12 bg-warning">B</div>
+            <div class="col-md-4 col-12 bg-danger">C</div>
+        </div>
     </div>
-
-    <button id="hideBtn">Ẩn</button>
-    <button id="showBtn">Hiện</button>
-    <button id="toggleBtn">Toggle</button>
-
-    <script>
-        $(document).ready(function(){
-
-            $("#hideBtn").click(function(){
-                $("#box").hide(1000);
-            });
-
-            $("#showBtn").click(function(){
-                $("#box").show(1000);
-            });
-
-            $("#toggleBtn").click(function(){
-                $("#box").toggle(1000);
-            });
-
-        });
-    </script>
-
+    <div 
+    class="bg-success border border-3 border-black m-5 p-5" 
+    style="width: 200px; height: 200px;"
+    >
+    <div class="bg-warning w-100 h-100"></div>
+    </div>
+    <div class="bg"></div>
 </body>
 </html>
